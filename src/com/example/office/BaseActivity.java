@@ -1,7 +1,6 @@
 package com.example.office;
 
 
-
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
@@ -15,6 +14,10 @@ public abstract class BaseActivity extends Activity{
 		super.onCreate(savedInstanceState);	
 		init();
 		setContentView(getLayoutId());
+		findViewById();
+		setListener();
+		setView();
+		doExtra();
 	}
 	
 	public void init(){
